@@ -1,42 +1,30 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
 <head>
-  <meta charset="UTF-8">
-  <title>List Users</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>Knjižnica - korisnici</title>
 </head>
 <body>
-<div class="container text-center">
-  <div>
-    <form th:action="@{/logout}" method="post">
-
-      <input type="submit" value="Odjavite se" />
-    </form>
-  </div>
-  <div>
-    <h1>Lista korisnikaadsad</h1>
-  </div>
-
-  <div>
-    <table class="table table-striped table-bordered">
-      <thead class="thead-dark">
-      <tr>
-        <th>ID</th>
-        <th>E-mail</th>
-        <th>Ime</th>
-        <th>Prezime</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr th:each="user: ${listUsers}">
-        <td th:text="${user.id}">ID</td>
-        <td th:text="${user.email}">E-mail</td>
-        <td th:text="${user.firstname}">Ime</td>
-        <td th:text="${user.lastname}">Prezime</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
+<div layout:fragment="content">
+  <h1>Lista korisnika</h1>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+    <tr>
+      <th>ID</th>
+      <th>E-mail</th>
+      <th>Ime</th>
+      <th>Prezime</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user: ${listUsers}">
+      <td th:text="${user.id}">User ID</td>
+      <td th:text="${user.email}">E-mail</td>
+      <td th:text="${user.firstname}">First Name</td>
+      <td th:text="${user.lastname}">Last Name</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
 </body>
 </html>
