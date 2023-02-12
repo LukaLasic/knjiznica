@@ -1,4 +1,4 @@
-package ba.sum.fsre.knjiznica.model;
+package ba.sum.fsre.ednevnik.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

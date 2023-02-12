@@ -1,8 +1,8 @@
-package ba.sum.fsre.knjiznica.controller;
+package ba.sum.fsre.ednevnik.controller;
 
-import ba.sum.fsre.knjiznica.model.User;
-import ba.sum.fsre.knjiznica.model.UserDetails;
-import ba.sum.fsre.knjiznica.repositories.UserRepository;
+import ba.sum.fsre.ednevnik.model.User;
+import ba.sum.fsre.ednevnik.model.UserDetails;
+import ba.sum.fsre.ednevnik.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

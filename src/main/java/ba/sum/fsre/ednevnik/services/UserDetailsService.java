@@ -1,9 +1,9 @@
-package ba.sum.fsre.knjiznica.services;
+package ba.sum.fsre.ednevnik.services;
 
 
-import ba.sum.fsre.knjiznica.model.User;
-import ba.sum.fsre.knjiznica.model.UserDetails;
-import ba.sum.fsre.knjiznica.repositories.UserRepository;
+import ba.sum.fsre.ednevnik.model.User;
+import ba.sum.fsre.ednevnik.model.UserDetails;
+import ba.sum.fsre.ednevnik.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 

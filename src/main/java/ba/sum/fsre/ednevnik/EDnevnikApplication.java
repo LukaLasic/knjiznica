@@ -1,13 +1,13 @@
-package ba.sum.fsre.knjiznica;
+package ba.sum.fsre.ednevnik;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KnjiznicaApplication {
+public class EDnevnikApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KnjiznicaApplication.class, args);
+        SpringApplication.run(EDnevnikApplication.class, args);
     }
 
 }

@@ -1,4 +1,4 @@
-package ba.sum.fsre.knjiznica.model;
+package ba.sum.fsre.ednevnik.model;
 
 import org.springframework.security.core.GrantedAuthority;
 
